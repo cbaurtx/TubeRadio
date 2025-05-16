@@ -1,0 +1,764 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L cbaurtx:2P2 Ro3
+U 1 1 5F7FC6F4
+P 8150 2500
+F 0 "Ro3" H 8600 2850 50  0000 R CNN
+F 1 "2P2" H 8500 2200 50  0000 R CNN
+F 2 "Valve:Valve_Mini_P" H 8150 2500 50  0001 C CNN
+F 3 "" H 8150 2500 50  0001 C CNN
+	1    8150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2100 8000 1850
+Wire Wire Line
+	8000 1850 8300 1850
+$Comp
+L Transformer:TRANSF1 #TR1
+U 1 1 5F8031B0
+P 10350 2650
+F 0 "#TR1" H 10350 2950 50  0001 C CNN
+F 1 "300:8" H 10350 2400 50  0000 C CNN
+F 2 "" H 10350 2650 50  0001 C CNN
+F 3 "" H 10350 2650 50  0001 C CNN
+	1    10350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female AUS1
+U 1 1 5F805836
+P 9650 2300
+F 0 "AUS1" H 9678 2326 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 9678 2235 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 9650 2300 50  0001 C CNN
+F 3 "~" H 9650 2300 50  0001 C CNN
+	1    9650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female AUS2
+U 1 1 5F80620D
+P 9650 3050
+F 0 "AUS2" H 9678 3076 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 9678 2985 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 9650 3050 50  0001 C CNN
+F 3 "~" H 9650 3050 50  0001 C CNN
+	1    9650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2100 8300 1850
+Connection ~ 8300 1850
+Wire Wire Line
+	8300 1850 9000 1850
+Wire Wire Line
+	8050 2950 8050 3150
+Wire Wire Line
+	8050 3150 8250 3150
+Wire Wire Line
+	8250 3150 8250 2950
+$Comp
+L Connector:Conn_01x01_Female +L1
+U 1 1 5F80DB49
+P 10200 3400
+F 0 "+L1" H 10228 3426 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10228 3335 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 10200 3400 50  0001 C CNN
+F 3 "~" H 10200 3400 50  0001 C CNN
+	1    10200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female -L1
+U 1 1 5F80E712
+P 10200 4250
+F 0 "-L1" H 10228 4276 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10228 4185 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 10200 4250 50  0001 C CNN
+F 3 "~" H 10200 4250 50  0001 C CNN
+	1    10200 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 10500 4000 0    118  ~ 0
+30-\n40V
+$Comp
+L Device:CP C9
+U 1 1 5F80F74F
+P 9650 3900
+F 0 "C9" H 9768 3946 50  0000 L CNN
+F 1 "47µF" H 9768 3855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L20.0mm_D10.0mm_P26.00mm_Horizontal" H 9688 3750 50  0001 C CNN
+F 3 "~" H 9650 3900 50  0001 C CNN
+	1    9650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4050 9650 4250
+Connection ~ 9650 4250
+Wire Wire Line
+	9650 4250 10000 4250
+Wire Wire Line
+	9650 3750 9650 3600
+$Comp
+L Device:R R6
+U 1 1 5F810DDC
+P 9200 3900
+F 0 "R6" H 9270 3946 50  0000 L CNN
+F 1 "300Ω" H 9270 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P30.48mm" V 9130 3900 50  0001 C CNN
+F 3 "~" H 9200 3900 50  0001 C CNN
+	1    9200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4050 9200 4250
+Connection ~ 9200 4250
+Wire Wire Line
+	9200 4250 9650 4250
+$Comp
+L Device:R R5
+U 1 1 5F811EDF
+P 8350 4250
+F 0 "R5" V 8450 4250 50  0000 C CNN
+F 1 "300kΩ" V 8250 4250 50  0000 C CNN
+F 2 "cbaurtx:R_Vintage_17mm_D7mm_P16mm_Horizontal" V 8280 4250 50  0001 C CNN
+F 3 "~" H 8350 4250 50  0001 C CNN
+	1    8350 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 3600 9200 3600
+Wire Wire Line
+	8500 4250 9200 4250
+$Comp
+L Device:Speaker #LS1
+U 1 1 5F8183FD
+P 10850 2600
+F 0 "#LS1" H 11020 2596 50  0001 L CNN
+F 1 "Lautsprecher" H 10650 2300 50  0000 L CNN
+F 2 "" H 10850 2400 50  0001 C CNN
+F 3 "~" H 10840 2550 50  0001 C CNN
+	1    10850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3600 9200 3600
+Connection ~ 9200 3600
+Wire Wire Line
+	9200 3600 9200 3750
+$Comp
+L Connector:Conn_01x01_Female +H1
+U 1 1 5F82302E
+P 10200 4550
+F 0 "+H1" H 10228 4576 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10228 4485 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 10200 4550 50  0001 C CNN
+F 3 "~" H 10200 4550 50  0001 C CNN
+	1    10200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female -H1
+U 1 1 5F823034
+P 10200 4850
+F 0 "-H1" H 10228 4876 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10228 4785 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 10200 4850 50  0001 C CNN
+F 3 "~" H 10200 4850 50  0001 C CNN
+	1    10200 4850
+	1    0    0    -1  
+$EndComp
+Text Notes 10500 4650 0    118  ~ 0
+1,4V
+Wire Wire Line
+	8750 3600 8750 4850
+Wire Wire Line
+	8750 4850 10000 4850
+Connection ~ 8750 3600
+Wire Wire Line
+	9000 1850 9000 2300
+Wire Wire Line
+	8450 2450 8750 2450
+Wire Wire Line
+	8750 2450 8750 3050
+Wire Wire Line
+	8750 3400 10000 3400
+Connection ~ 8750 3050
+Wire Wire Line
+	8750 3050 8750 3400
+Wire Wire Line
+	8050 3150 8050 4550
+Wire Wire Line
+	8050 4550 10000 4550
+Connection ~ 8050 3150
+$Comp
+L Device:C C7
+U 1 1 5F831E3D
+P 7250 2550
+F 0 "C7" V 7400 2550 50  0000 C CNN
+F 1 "39nF" V 7089 2550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Axial_L17.0mm_D6.5mm_P20.00mm_Horizontal" H 7288 2400 50  0001 C CNN
+F 3 "~" H 7250 2550 50  0001 C CNN
+	1    7250 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F83D03B
+P 6800 2950
+F 0 "R4" H 6870 2996 50  0000 L CNN
+F 1 "270kΩ" H 6870 2905 50  0000 L CNN
+F 2 "cbaurtx:R_Vintage_17mm_D7mm_P16mm_Horizontal" V 6730 2950 50  0001 C CNN
+F 3 "~" H 6800 2950 50  0001 C CNN
+	1    6800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F83E0C3
+P 6400 3650
+F 0 "R3" V 6500 3650 50  0000 C CNN
+F 1 "2MΩ" V 6300 3650 50  0000 C CNN
+F 2 "cbaurtx:R_Vintage_17mm_D7mm_P15mm_Horizontal" V 6330 3650 50  0001 C CNN
+F 3 "~" H 6400 3650 50  0001 C CNN
+	1    6400 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 3240 5000 2550
+$Comp
+L cbaurtx:1B2 Ro2
+U 1 1 5F83818E
+P 5000 3700
+F 0 "Ro2" H 5200 4050 50  0000 L CNN
+F 1 "1B2" H 5250 3450 50  0000 L CNN
+F 2 "Valve:Valve_Mini_P" H 5000 3700 50  0001 C CNN
+F 3 "" H 5000 3700 50  0001 C CNN
+	1    5000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2550 6800 2800
+$Comp
+L Device:C C6
+U 1 1 5F844713
+P 6000 3150
+F 0 "C6" H 6115 3196 50  0000 L CNN
+F 1 "270pF" H 6115 3105 50  0000 L CNN
+F 2 "cbaurtx:C_Axial_L25.0mm_D5.0mm_P30.00mm_Horizontal" H 6038 3000 50  0001 C CNN
+F 3 "~" H 6000 3150 50  0001 C CNN
+	1    6000 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 2550
+Wire Wire Line
+	6800 2550 7100 2550
+Wire Wire Line
+	5000 2550 6000 2550
+Wire Wire Line
+	6000 3000 6000 2550
+Connection ~ 6000 2550
+Wire Wire Line
+	6000 2550 6800 2550
+Wire Wire Line
+	6800 3100 6800 3400
+Connection ~ 8750 3400
+Wire Wire Line
+	8750 4850 6000 4850
+Wire Wire Line
+	6000 4850 6000 3300
+Connection ~ 8750 4850
+Wire Wire Line
+	6550 3650 6800 3650
+Wire Wire Line
+	6800 3650 6800 3400
+Connection ~ 6800 3400
+Wire Wire Line
+	6800 3400 8750 3400
+Wire Wire Line
+	5300 3650 5600 3650
+$Comp
+L Device:C C5
+U 1 1 5F859B13
+P 5600 4250
+F 0 "C5" H 5715 4296 50  0000 L CNN
+F 1 "39nF" H 5715 4205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L17.0mm_D6.5mm_P20.00mm_Horizontal" H 5638 4100 50  0001 C CNN
+F 3 "~" H 5600 4250 50  0001 C CNN
+	1    5600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4100 5600 3650
+Connection ~ 5600 3650
+Wire Wire Line
+	5600 3650 6250 3650
+Wire Wire Line
+	5600 4400 5600 4850
+Wire Wire Line
+	5600 4850 6000 4850
+Connection ~ 6000 4850
+Wire Wire Line
+	8050 4550 5100 4550
+Wire Wire Line
+	5100 4550 5100 4150
+Connection ~ 8050 4550
+Wire Wire Line
+	4900 4150 4900 4850
+Wire Wire Line
+	4900 4850 5600 4850
+Connection ~ 5600 4850
+$Comp
+L cbaurtx:2P2 Ro1
+U 1 1 5F868C7A
+P 3000 3750
+F 0 "Ro1" H 3400 4000 50  0000 R CNN
+F 1 "2P2" H 3300 3500 50  0000 R CNN
+F 2 "Valve:Valve_Mini_P" H 3000 3750 50  0001 C CNN
+F 3 "" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4200 2900 4550
+Wire Wire Line
+	2900 4550 3100 4550
+Wire Wire Line
+	3100 4550 3100 4200
+$Comp
+L Device:R_POT P1
+U 1 1 5F86A60E
+P 4250 3750
+F 0 "P1" H 4180 3796 50  0000 R CNN
+F 1 "500kΩ" H 4180 3705 50  0000 R CNN
+F 2 "cbaurtx:Potentiometer_Round_D19_Vertical" H 4250 3750 50  0001 C CNN
+F 3 "~" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3750 4700 3750
+Wire Wire Line
+	4250 3900 4250 4850
+Wire Wire Line
+	4250 4850 4900 4850
+Connection ~ 4900 4850
+$Comp
+L Device:C C4
+U 1 1 5F87212F
+P 4250 3050
+F 0 "C4" H 4365 3096 50  0000 L CNN
+F 1 "39nF" H 4365 3005 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L17.0mm_D6.5mm_P20.00mm_Horizontal" H 4288 2900 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3200 4250 3600
+$Comp
+L Device:L_Core_Iron L4
+U 1 1 5F87B17E
+P 3750 3050
+F 0 "L4" H 3650 3000 50  0000 C CNN
+F 1 "10H" H 3650 3100 50  0000 C CNN
+F 2 "cbaurtx:L_37mmx15mm" H 3750 3050 50  0001 C CNN
+F 3 "~" H 3750 3050 50  0001 C CNN
+	1    3750 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3350 3150 2550
+Wire Wire Line
+	3150 2550 3750 2550
+Wire Wire Line
+	4250 2550 4250 2900
+Wire Wire Line
+	3750 2900 3750 2550
+Connection ~ 3750 2550
+Wire Wire Line
+	3750 2550 4250 2550
+Wire Wire Line
+	3300 3700 3750 3700
+Wire Wire Line
+	3750 3700 3750 3200
+Wire Wire Line
+	6800 3650 6800 5150
+Wire Wire Line
+	6800 5150 3750 5150
+Wire Wire Line
+	3750 5150 3750 3700
+Connection ~ 6800 3650
+Connection ~ 3750 3700
+Wire Wire Line
+	5100 4550 3100 4550
+Connection ~ 5100 4550
+Connection ~ 3100 4550
+Connection ~ 4250 4850
+Wire Wire Line
+	2350 3150 2850 3150
+Wire Wire Line
+	2850 3150 2850 3350
+$Comp
+L Device:C C1
+U 1 1 5F8DC291
+P 1100 4550
+F 0 "C1" H 1215 4596 50  0000 L CNN
+F 1 "270pF" H 1215 4505 50  0000 L CNN
+F 2 "cbaurtx:C_Axial_L25.0mm_D5.0mm_P30.00mm_Horizontal" H 1138 4400 50  0001 C CNN
+F 3 "~" H 1100 4550 50  0001 C CNN
+	1    1100 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3150 1100 3150
+Wire Wire Line
+	1100 3150 1100 3900
+Wire Wire Line
+	1100 4200 1100 4300
+$Comp
+L Device:R R2
+U 1 1 5F8ECA9E
+P 2300 3700
+F 0 "R2" V 2400 3700 50  0000 C CNN
+F 1 "2MΩ" V 2200 3700 50  0000 C CNN
+F 2 "cbaurtx:R_Vintage_17mm_D7mm_P15mm_Horizontal" V 2230 3700 50  0001 C CNN
+F 3 "~" H 2300 3700 50  0001 C CNN
+	1    2300 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 3700 2650 3700
+$Comp
+L Device:C C3
+U 1 1 5F913D73
+P 2300 4100
+F 0 "C3" V 2150 4100 50  0000 C CNN
+F 1 "270pF" V 2450 4150 50  0000 C CNN
+F 2 "cbaurtx:C_Axial_L25.0mm_D5.0mm_P30.00mm_Horizontal" H 2338 3950 50  0001 C CNN
+F 3 "~" H 2300 4100 50  0001 C CNN
+	1    2300 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3800 2650 4100
+Wire Wire Line
+	2650 4100 2450 4100
+Wire Wire Line
+	2650 3800 2700 3800
+Wire Wire Line
+	1950 3700 2150 3700
+$Comp
+L Device:C_Variable C2
+U 1 1 5F91BBB4
+P 1950 4450
+F 0 "C2" H 2065 4496 50  0000 L CNN
+F 1 "360pF" H 2065 4405 50  0000 L CNN
+F 2 "cbaurtx:C_Var_L36mm_W33mm" H 1950 4450 50  0001 C CNN
+F 3 "~" H 1950 4450 50  0001 C CNN
+	1    1950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4600 1950 4700
+Wire Wire Line
+	1950 4700 1850 4700
+Wire Wire Line
+	1700 4700 1700 3900
+Wire Wire Line
+	1100 4700 1100 4850
+Connection ~ 7650 2550
+Wire Wire Line
+	7400 2550 7650 2550
+Wire Wire Line
+	7850 2550 7650 2550
+Wire Wire Line
+	7650 2550 7650 4250
+Wire Wire Line
+	7650 4250 8200 4250
+Wire Wire Line
+	2650 3700 2650 3800
+Connection ~ 2650 3800
+Connection ~ 1950 3700
+Wire Wire Line
+	2150 4100 1950 4100
+Connection ~ 1950 4100
+Wire Wire Line
+	1950 4100 1950 4300
+Wire Wire Line
+	1950 3700 1950 4100
+Text Notes 1000 5300 0    50   ~ 0
+Koppelspule\n1-2    8 Windungen\n3-4    8 Windungen\n5-6   25 Windungen (2 Lagen)\nKern ø 13mm ; Draht ø 0.9mm 
+$Comp
+L Device:Antenna #Antenne1
+U 1 1 5F815D54
+P 950 2450
+F 0 "#Antenne1" H 1030 2393 50  0001 L CNN
+F 1 "Antenne" H 1030 2348 50  0000 L CNN
+F 2 "" H 950 2450 50  0001 C CNN
+F 3 "~" H 950 2450 50  0001 C CNN
+	1    950  2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female ANTENNE
+U 1 1 5F822D99
+P 1050 2800
+F 0 "ANTENNE" H 1100 2800 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 1078 2735 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 1050 2800 50  0001 C CNN
+F 3 "~" H 1050 2800 50  0001 C CNN
+	1    1050 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female ERDE
+U 1 1 5F817A52
+P 1050 3000
+F 0 "ERDE" H 1100 3000 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 1078 2935 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 1050 3000 50  0001 C CNN
+F 3 "~" H 1050 3000 50  0001 C CNN
+	1    1050 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2800 1250 2800
+Wire Wire Line
+	8750 3600 8150 3600
+Wire Wire Line
+	8150 3600 8150 2950
+Wire Wire Line
+	3000 4200 3000 4850
+Connection ~ 3000 4850
+Wire Wire Line
+	3000 4850 1850 4850
+Wire Wire Line
+	3000 4850 4250 4850
+Text Notes 7550 6900 0    118  ~ 0
+Regenerativ-Kurzwellenempfänger
+Text Notes 7550 7100 0    79   ~ 0
+von Christof
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F8562F7
+P 1500 6750
+F 0 "H3" V 1737 6753 50  0001 C CNN
+F 1 "MountingHole_Pad" V 1646 6753 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopOnly" H 1500 6750 50  0001 C CNN
+F 3 "~" H 1500 6750 50  0001 C CNN
+	1    1500 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F85A3FA
+P 1500 7050
+F 0 "H4" V 1737 7053 50  0001 C CNN
+F 1 "MountingHole_Pad" V 1646 7053 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopOnly" H 1500 7050 50  0001 C CNN
+F 3 "~" H 1500 7050 50  0001 C CNN
+	1    1500 7050
+	0    1    1    0   
+$EndComp
+Text Notes 10450 2700 0    59   ~ 0
+8Ω
+Text Notes 10000 2700 0    59   ~ 0
+300Ω
+$Comp
+L Device:C C8
+U 1 1 5F82C1A5
+P 9000 2650
+F 0 "C8" H 9115 2696 50  0000 L CNN
+F 1 "10nF" H 9115 2605 50  0000 L CNN
+F 2 "cbaurtx:C_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 9038 2500 50  0001 C CNN
+F 3 "~" H 9000 2650 50  0001 C CNN
+	1    9000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3050 9000 3050
+Wire Wire Line
+	9000 2800 9000 3050
+Connection ~ 9000 3050
+Connection ~ 9000 2300
+Wire Wire Line
+	9000 2300 9000 2500
+Text Notes 10500 4900 0    118  ~ 0
+0.25A
+$Comp
+L Device:R_POT R1
+U 1 1 5F88F355
+P 1100 4050
+F 0 "R1" H 1031 4096 50  0000 R CNN
+F 1 "10kΩ" H 1031 4005 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA14V-15_Vertical" H 1100 4050 50  0001 C CNN
+F 3 "~" H 1100 4050 50  0001 C CNN
+	1    1100 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4300 1100 4300
+Connection ~ 1100 4300
+Wire Wire Line
+	1100 4300 1100 4400
+Wire Wire Line
+	9000 2300 9450 2300
+Wire Wire Line
+	9000 3050 9450 3050
+Wire Wire Line
+	10550 2450 10650 2450
+Wire Wire Line
+	10650 2450 10650 2600
+Wire Wire Line
+	10650 2700 10650 2850
+Wire Wire Line
+	10650 2850 10550 2850
+$Comp
+L Connector:Conn_01x01_Male #J3
+U 1 1 5F8E0444
+P 9850 2450
+F 0 "#J3" H 9958 2631 50  0001 C CNN
+F 1 "Conn_01x01_Male" H 9958 2540 50  0001 C CNN
+F 2 "" H 9850 2450 50  0001 C CNN
+F 3 "~" H 9850 2450 50  0001 C CNN
+	1    9850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male #J4
+U 1 1 5F8E11A7
+P 9850 2850
+F 0 "#J4" H 9958 3031 50  0001 C CNN
+F 1 "Conn_01x01_Male" H 9958 2940 50  0001 C CNN
+F 2 "" H 9850 2850 50  0001 C CNN
+F 3 "~" H 9850 2850 50  0001 C CNN
+	1    9850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2450 10150 2450
+Wire Wire Line
+	10050 2850 10150 2850
+Wire Wire Line
+	1350 4050 1350 4300
+Wire Wire Line
+	1250 4050 1350 4050
+Wire Wire Line
+	1700 3300 2150 3300
+Wire Wire Line
+	2150 3300 2150 3150
+Wire Wire Line
+	1700 3400 2350 3400
+Wire Wire Line
+	2350 3400 2350 3150
+Wire Wire Line
+	1400 3850 1250 3850
+Wire Wire Line
+	1250 3000 1250 3850
+Wire Wire Line
+	1700 3700 1950 3700
+$Comp
+L Connector:Conn_01x01_Female E1
+U 1 1 5F925023
+P 10200 5150
+F 0 "E1" H 10228 5176 50  0000 L CNN
+F 1 "Erde" H 10228 5085 50  0001 L CNN
+F 2 "Banana_terminals:Banana_Jack_Terminal_1Pin" H 10200 5150 50  0001 C CNN
+F 3 "~" H 10200 5150 50  0001 C CNN
+	1    10200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5150 10000 5150
+Wire Wire Line
+	8750 4850 8750 5150
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F85231E
+P 950 7050
+F 0 "H2" V 1187 7053 50  0001 C CNN
+F 1 "MountingHole_Pad" V 1096 7053 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopOnly" H 950 7050 50  0001 C CNN
+F 3 "~" H 950 7050 50  0001 C CNN
+	1    950  7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F851536
+P 950 6750
+F 0 "H1" V 1187 6753 50  0001 C CNN
+F 1 "MountingHole_Pad" V 1096 6753 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad_TopOnly" H 950 6750 50  0001 C CNN
+F 3 "~" H 950 6750 50  0001 C CNN
+	1    950  6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L cbaurtx:GNDPWR #PWR?
+U 1 1 5F985D12
+P 10300 5200
+F 0 "#PWR?" H 10300 5000 50  0001 C CNN
+F 1 "GNDPWR" H 10295 5046 50  0001 C CNN
+F 2 "" H 10300 5150 50  0001 C CNN
+F 3 "" H 10300 5150 50  0001 C CNN
+	1    10300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cbaurtx:GNDPWR #PWR?
+U 1 1 5F988B15
+P 950 3100
+F 0 "#PWR?" H 950 2900 50  0001 C CNN
+F 1 "GNDPWR" H 945 2946 50  0001 C CNN
+F 2 "" H 950 3050 50  0001 C CNN
+F 3 "" H 950 3050 50  0001 C CNN
+	1    950  3100
+	1    0    0    -1  
+$EndComp
+Text Notes 7450 7500 0    79   ~ 0
+Regenerativ-Kurzwellenempfänger
+Text Notes 8100 7650 0    59   ~ 0
+20.12.2020
+Text Notes 10550 7650 0    79   ~ 0
+1.1
+Wire Wire Line
+	1400 2800 1400 3750
+$Comp
+L cbaurtx:L_Coupled L1-L3
+U 1 1 5F941321
+P 1600 3550
+F 0 "L1-L3" H 1650 3999 50  0000 C CNN
+F 1 "Koppelspule" H 1550 3900 50  0000 C CNN
+F 2 "cbaurtx:L_Antennal_L72mm_D23mm" V 1612 3714 50  0001 C CNN
+F 3 "~" V 1612 3714 50  0001 C CNN
+	1    1600 3550
+	-1   0    0    -1  
+$EndComp
+Text Notes 2400 5300 0    50   ~ 0
+Änderungen:\n29.12.2020\nKoppelspule: Windungen\nFehlende Verbindung Eingangsschwingkreis nach - H1
+Wire Wire Line
+	1850 4700 1850 4850
+Connection ~ 1850 4700
+Wire Wire Line
+	1850 4700 1700 4700
+Connection ~ 1850 4850
+Wire Wire Line
+	1850 4850 1100 4850
+$EndSCHEMATC

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Banana_terminals)(type KiCad)(uri /home/iris/Development/Electronics/KiCad_libs/footprints)(options "")(descr "")(disabled))
+  (lib (name cbaurtx)(type KiCad)(uri /home/iris/Development/Electronics/KiCad_libs/footprints)(options "")(descr ""))
+)

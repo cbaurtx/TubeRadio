@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "cbaurtx")(type "Legacy")(uri "/home/iris/Development/Electronics/KiCad_libs/symbols/minipenthode.lib")(options "")(descr ""))
+  (lib (name "l_ferrite_coupled_inline")(type "Legacy")(uri "/home/iris/Development/Electronics/KiCad_libs/symbols/l_ferrite_coupled_inline.lib")(options "")(descr ""))
+  (lib (name "transf4")(type "Legacy")(uri "/home/iris/Development/Electronics/KiCad_libs/symbols/transf4.lib")(options "")(descr ""))
+  (lib (name "gndpwr")(type "Legacy")(uri "/home/iris/Development/Electronics/KiCad_libs/symbols/gndpwr.lib")(options "")(descr ""))
+  (lib (name "RegenerativeRadio-rescue")(type "KiCad")(uri "${KIPRJMOD}/RegenerativeRadio-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "RegenerativeRadioPowerSupply-rescue")(type "KiCad")(uri "${KIPRJMOD}/RegenerativeRadioPowerSupply-rescue.kicad_sym")(options "")(descr ""))
+)
