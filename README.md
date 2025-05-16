@@ -8,8 +8,8 @@ TubeRadio is covered by CERN-OHL-W (Weakly reciprocal)
 Refer to doc/LICENSE.md for the license text
 ## Notes
 ### Output Transformer
-There is a DC bias flowing through the output transformer. To avoid magnetic saturation of the iron core the core needs a small paper/plastic gap (~0.1–0.3 mm) between E and I laminations. Do not use a power
-transformer or an audio transformer for a push pull amplifier.
+There is a DC bias flowing through the output transformer. To avoid magnetic saturation of the iron core the core needs a small paper/plastic gap (~0.1–0.3 mm) between E and I laminations of the E I core. Do not use a power
+transformer or an audio transformer or a push pull amplifier.
 ### Input Tank and Tickler Coil
 The target frequency range of this radio is from 1.50MHz to 4.25MHz. With a capacity of 70pF to 570pF we can calculate the inductance of the coil of the input tank.
 
