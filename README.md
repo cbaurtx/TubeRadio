@@ -34,7 +34,7 @@ coil we need this air coil:
 
 
 The antenna and the tickler coil both have 8 turns.
-The antenna coil is wound on to of the input tank coil and the tickler coil is side by side pf the other coils at a distance of 10mm.
+The antenna coil is wound on to of the input tank coil and the tickler coil is side by side of the other coils at a distance of 10mm.
 
 
 
