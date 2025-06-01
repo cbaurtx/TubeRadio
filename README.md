@@ -39,3 +39,5 @@ The antenna coil is wound on to of the input tank coil and the tickler coil is s
 The design files are for KiCad version 9.
 
 
+
+
