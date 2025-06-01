@@ -7162,8 +7162,8 @@
 				)
 			)
 		)
-		(property "Value" "10H"
-			(at 97.79 78.74 0)
+		(property "Value" "6H - 10H"
+			(at 101.6 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
