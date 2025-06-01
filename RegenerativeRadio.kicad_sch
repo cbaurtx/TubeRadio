@@ -3665,6 +3665,16 @@
 		)
 		(uuid "a0aebda3-1c1b-4b80-81b5-8e2978374cdf")
 	)
+	(text "Anode choke\nwith core gap"
+		(exclude_from_sim no)
+		(at 89.916 77.978 90)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "af974cbc-24b8-4698-8a40-da26f5b5a1aa")
+	)
 	(text "0.25A"
 		(exclude_from_sim no)
 		(at 266.7 124.46 0)
