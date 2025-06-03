@@ -707,6 +707,16 @@
 		)
 		(uuid "12edcaff-2624-44bc-b7f4-74d190909473")
 	)
+	(text "Load"
+		(exclude_from_sim no)
+		(at 197.612 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ea8c1ba-5c98-4451-9c24-9027575932c3")
+	)
 	(text "LM317 Voltage Regulator Simulation\n"
 		(exclude_from_sim no)
 		(at 187.198 175.006 0)
@@ -719,6 +729,12 @@
 			(justify left bottom)
 		)
 		(uuid "d3faba52-8227-4627-ad51-c212aa7e4932")
+	)
+	(junction
+		(at 193.04 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "082416fb-dd06-44e1-8f61-7efd26789361")
 	)
 	(junction
 		(at 172.72 88.9)
@@ -782,6 +798,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 88.9) (xy 196.85 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bc66519-5831-40ec-985b-f18a254494f0")
+	)
+	(wire
+		(pts
 			(xy 146.05 99.06) (xy 146.05 102.87)
 		)
 		(stroke
@@ -809,6 +835,16 @@
 			(type default)
 		)
 		(uuid "2e07b2f2-3a94-4a2c-9b75-f612c3a594a4")
+	)
+	(wire
+		(pts
+			(xy 193.04 88.9) (xy 193.04 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e5bcf7c-fa33-4383-82a6-f20bbea0b4d3")
 	)
 	(wire
 		(pts
@@ -852,7 +888,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 88.9) (xy 180.34 88.9)
+			(xy 172.72 88.9) (xy 193.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -869,6 +905,16 @@
 			(type default)
 		)
 		(uuid "85fcc606-4d10-4b82-be69-141f4e86ab6f")
+	)
+	(wire
+		(pts
+			(xy 193.04 106.68) (xy 193.04 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88255bf3-cc31-4ca5-bb65-b8562359c753")
 	)
 	(wire
 		(pts
@@ -951,7 +997,7 @@
 		(uuid "f3e8c6c3-34e4-4e82-85e4-e1e93cbe0949")
 	)
 	(label "OUT"
-		(at 180.34 88.9 0)
+		(at 196.85 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -980,7 +1026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08b5dc7a-f764-434f-81ae-b66259036659")
-		(property "Reference" "C103"
+		(property "Reference" "C101"
 			(at 135.89 101.5999 0)
 			(effects
 				(font
@@ -1034,7 +1080,7 @@
 		(instances
 			(project "Vreg"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "C103")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -1049,7 +1095,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "173d0f13-4c63-4fba-aee9-0e6f6462636f")
-		(property "Reference" "#GND0101"
+		(property "Reference" "#GND0103"
 			(at 146.05 116.84 0)
 			(effects
 				(font
@@ -1100,7 +1146,7 @@
 		(instances
 			(project "Blocking"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "#GND0101")
+					(reference "#GND0103")
 					(unit 1)
 				)
 			)
@@ -1115,7 +1161,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24d19e5b-5e8c-443b-b5c2-c9e929a4eb63")
-		(property "Reference" "#GND0102"
+		(property "Reference" "#GND0101"
 			(at 118.11 116.84 0)
 			(effects
 				(font
@@ -1166,7 +1212,73 @@
 		(instances
 			(project "Blocking"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "#GND0102")
+					(reference "#GND0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pspice:0")
+		(at 193.04 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30259b9c-10c4-457f-b94a-45157ca6844b")
+		(property "Reference" "#GND0106"
+			(at 193.04 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 195.58 115.062 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80868ec5-5dc7-4c96-96bb-f3dd1371be88")
+		)
+		(instances
+			(project "Vreg"
+				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
+					(reference "#GND0106")
 					(unit 1)
 				)
 			)
@@ -1395,7 +1507,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38ed6e73-3018-45f2-a871-a1c02aaceea3")
-		(property "Reference" "#GND0105"
+		(property "Reference" "#GND0104"
 			(at 160.02 116.84 0)
 			(effects
 				(font
@@ -1446,7 +1558,7 @@
 		(instances
 			(project "Vreg"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "#GND0105")
+					(reference "#GND0104")
 					(unit 1)
 				)
 			)
@@ -1462,7 +1574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "454c2975-7e9d-4cc3-a6e2-1d7c31eabf9d")
-		(property "Reference" "R102"
+		(property "Reference" "R101"
 			(at 148.59 105.4099 0)
 			(effects
 				(font
@@ -1516,7 +1628,7 @@
 		(instances
 			(project "Vreg"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "R102")
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -1531,7 +1643,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4dd0566f-d671-427f-b92b-23d60d911753")
-		(property "Reference" "#GND0104"
+		(property "Reference" "#GND0105"
 			(at 172.72 116.84 0)
 			(effects
 				(font
@@ -1582,7 +1694,7 @@
 		(instances
 			(project "Vreg"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "#GND0104")
+					(reference "#GND0105")
 					(unit 1)
 				)
 			)
@@ -1597,7 +1709,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7393c166-f8b9-498e-bd98-3db3301e94b7")
-		(property "Reference" "C101"
+		(property "Reference" "C103"
 			(at 176.276 101.854 0)
 			(effects
 				(font
@@ -1651,7 +1763,7 @@
 		(instances
 			(project ""
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "C101")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -1736,7 +1848,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86bfed49-2f71-47d1-aaf8-c04212e52a3c")
-		(property "Reference" "R101"
+		(property "Reference" "R102"
 			(at 157.48 92.7099 0)
 			(effects
 				(font
@@ -1790,7 +1902,77 @@
 		(instances
 			(project ""
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "R101")
+					(reference "R102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 193.04 102.87 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc3ecb7f-6be8-4260-9153-eaf7102a183b")
+		(property "Reference" "R103"
+			(at 190.5 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "500"
+			(at 190.5 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.818 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 193.04 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "08e600d4-cd4d-4d6d-bc6e-3a58db9e67e0")
+		)
+		(pin "1"
+			(uuid "c856ff06-6272-41a7-9954-3345c29cf21a")
+		)
+		(instances
+			(project "Vreg"
+				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
+					(reference "R103")
 					(unit 1)
 				)
 			)
@@ -1805,7 +1987,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de2c43b8-9d70-4863-bafc-20bea3b2052f")
-		(property "Reference" "#GND0103"
+		(property "Reference" "#GND0102"
 			(at 132.08 116.84 0)
 			(effects
 				(font
@@ -1856,7 +2038,7 @@
 		(instances
 			(project "Vreg"
 				(path "/9048a61a-cc24-400a-9e00-8ca96074b3d2"
-					(reference "#GND0103")
+					(reference "#GND0102")
 					(unit 1)
 				)
 			)
